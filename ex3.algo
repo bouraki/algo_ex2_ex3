@@ -1,0 +1,16 @@
+ALGORITHM Dot product
+VAR
+    ps = INTEGER
+BEGIN
+    for each pair of vectors (v1, v2) in n pairs do
+  ps = dot_product(v1, v2)
+  if ps = 0 then
+    print "Vectors", v1, "and", v2, "are orthogonal"
+  else
+    print "Vectors", v1, "and", v2, "are not orthogonal"
+  end if
+  
+END
+
+end for
+// This procedure takes in two vectors v1 and v2 and returns their dot product as a scalar value ps.
