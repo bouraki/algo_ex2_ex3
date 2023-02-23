@@ -1,0 +1,22 @@
+ALGORITHM sumOfDstinctElements
+VAR
+    set1 ,set2 = INTEGER 
+    freq = chara
+    arr = INTEGER
+BEGIN
+    read(sum_of_distinct)  
+    def sum_of_distinct_elements(set1, set2): 
+    arr = set1 + set2
+    freq = {}
+    for elem in arr:
+        if elem not in freq:
+            freq[elem] = 1
+        else:
+            freq[elem] += 1
+    sum_of_distinct = 0
+    for elem in freq:
+        if freq[elem] == 1:
+            sum_of_distinct += elem
+    return sum_of_distinct
+    write(sum_of_distinct)
+END
